@@ -162,3 +162,35 @@ This uses a list of cards stacked in a slightly tiled deck that will unravel on 
   </li>
 </ul>
 ```
+
+## Silly message animation
+
+https://play.tailwindcss.com/asBMhU1GmL
+
+Not sure what to do with this one.
+
+```html
+<div class="m-4 w-fit border border-black p-4">
+  <ul class="flex max-w-64 flex-col-reverse gap-4 text-white" tabindex="0">
+    <li class="relative perspective-normal">
+      <div
+        class="w-fit origin-top translate-y-12 rotate-x-100 rounded-md bg-blue-500 px-4 py-2 opacity-0 transition-[transform_opacity] duration-300 transform-3d in-focus:translate-y-0 in-focus:scale-x-100 in-focus:rotate-x-0 in-focus:opacity-100"
+      >
+        New Message
+      </div>
+      <div
+        class="absolute top-4 left-0 flex gap-2 transition-[transform_opacity] duration-100 ease-in-out in-focus:scale-0 in-focus:opacity-0"
+      >
+        <div class="size-3 animate-bounce rounded-full bg-blue-500"></div>
+        <div
+          class="size-3 animate-bounce rounded-full bg-blue-500 [animation-delay:100ms]"
+        ></div>
+        <div
+          class="size-3 animate-bounce rounded-full bg-blue-500 [animation-delay:200ms]"
+        ></div>
+      </div>
+    </li>
+    <li><div class="w-fit rounded-md bg-blue-500 px-4 py-2">You up?</div></li>
+  </ul>
+</div>
+```
