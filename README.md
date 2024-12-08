@@ -194,3 +194,102 @@ Not sure what to do with this one.
   </ul>
 </div>
 ```
+
+## Card entry animation
+
+https://play.tailwindcss.com/svBN1NAHqR
+
+This uses a list of cards stacked in a slightly tiled deck that will unravel on focus.
+
+```html
+<ul
+  tabindex="0"
+  class="flex *:w-px *:translate-x-96 *:translate-y-36 *:transition-[transform_width_margin] *:ease-in-out focus:space-x-4 focus:*:w-32 *:in-focus:translate-0"
+>
+  <li class="delay-500 perspective-normal">
+    <div
+      class="absolute aspect-2/3 w-32 rotate-y-215 border transition-transform delay-500 duration-300 transform-3d in-focus:rotate-y-0"
+    >
+      <div class="size-full backface-hidden">
+        <img
+          src="https://preview.redd.it/deploy-the-front-creature-token-question-v0-1dji09l6wh6c1.jpeg?auto=webp&s=1de32329a04d66c2eb25e5b0ba9b93ebabfaaa82"
+        />
+      </div>
+      <div class="absolute inset-0 rotate-y-180 backface-hidden">
+        <img
+          class="size-full object-cover"
+          src="https://i.redd.it/7rs2oqwxqp301.jpg"
+        />
+      </div>
+    </div>
+  </li>
+  <li class="delay-400 perspective-normal">
+    <div
+      class="absolute aspect-2/3 w-32 rotate-y-215 border transition-transform delay-400 duration-300 transform-3d in-focus:rotate-y-0"
+    >
+      <div class="size-full backface-hidden">
+        <img
+          src="https://preview.redd.it/deploy-the-front-creature-token-question-v0-1dji09l6wh6c1.jpeg?auto=webp&s=1de32329a04d66c2eb25e5b0ba9b93ebabfaaa82"
+        />
+      </div>
+      <div class="absolute inset-0 rotate-y-180 backface-hidden">
+        <img
+          class="size-full object-cover"
+          src="https://i.redd.it/7rs2oqwxqp301.jpg"
+        />
+      </div>
+    </div>
+  </li>
+  <li class="delay-300 perspective-normal">
+    <div
+      class="ease-test absolute aspect-2/3 w-32 rotate-y-215 border transition-transform delay-300 duration-300 transform-3d in-focus:rotate-y-0"
+    >
+      <div class="size-full backface-hidden">
+        <img
+          src="https://preview.redd.it/deploy-the-front-creature-token-question-v0-1dji09l6wh6c1.jpeg?auto=webp&s=1de32329a04d66c2eb25e5b0ba9b93ebabfaaa82"
+        />
+      </div>
+      <div class="absolute inset-0 rotate-y-180 backface-hidden">
+        <img
+          class="size-full object-cover"
+          src="https://i.redd.it/7rs2oqwxqp301.jpg"
+        />
+      </div>
+    </div>
+  </li>
+  <li class="delay-200 perspective-normal">
+    <div
+      class="absolute aspect-2/3 w-32 rotate-y-215 border transition-transform delay-200 duration-300 transform-3d in-focus:rotate-y-0"
+    >
+      <div class="size-full backface-hidden">
+        <img
+          src="https://preview.redd.it/deploy-the-front-creature-token-question-v0-1dji09l6wh6c1.jpeg?auto=webp&s=1de32329a04d66c2eb25e5b0ba9b93ebabfaaa82"
+        />
+      </div>
+      <div class="absolute inset-0 rotate-y-180 backface-hidden">
+        <img
+          class="size-full object-cover"
+          src="https://i.redd.it/7rs2oqwxqp301.jpg"
+        />
+      </div>
+    </div>
+  </li>
+  <li class="delay-100 perspective-normal">
+    <div
+      class="absolute aspect-2/3 w-32 rotate-y-215 border transition-transform delay-100 transform-3d in-focus:rotate-y-0"
+    >
+      <div class="size-full backface-hidden">
+        <img
+          src="https://preview.redd.it/deploy-the-front-creature-token-question-v0-1dji09l6wh6c1.jpeg?auto=webp&s=1de32329a04d66c2eb25e5b0ba9b93ebabfaaa82"
+        />
+      </div>
+      <div class="absolute inset-0 rotate-y-180 backface-hidden">
+        <img
+          class="size-full object-cover"
+          src="https://i.redd.it/7rs2oqwxqp301.jpg"
+        />
+      </div>
+    </div>
+  </li>
+</ul>
+```
