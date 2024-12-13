@@ -293,3 +293,43 @@ This uses a list of cards stacked in a slightly tiled deck that will unravel on 
   </li>
 </ul>
 ```
+
+## Card hand
+
+https://play.tailwindcss.com/XxaCMHfdcG
+
+A card hand that pulls out a card on hover.
+
+```html
+<div class="fixed inset-x-0 bottom-0 flex">
+  <ul
+    class="group mx-auto flex items-center *:*:mt-20 *:h-72 *:w-20 *:transition-[width_margin] hover:space-x-2 *:hover:z-10 *:hover:w-24 *:hover:*:-translate-y-1/2 *:hover:*:rotate-z-0 *:hover:*:bg-amber-200"
+  >
+    <li class="translate-y-12">
+      <div
+        class="aspect-2/3 w-32 -rotate-z-24 border border-black bg-amber-100 shadow-2xl drop-shadow-sm transition-transform"
+      ></div>
+    </li>
+    <li class="translate-y-3">
+      <div
+        class="aspect-2/3 w-32 -rotate-z-12 border border-black bg-amber-100 shadow-2xl drop-shadow-sm transition-transform"
+      ></div>
+    </li>
+    <li class="">
+      <div
+        class="aspect-2/3 w-32 border border-black bg-amber-100 shadow-2xl drop-shadow-sm transition-transform"
+      ></div>
+    </li>
+    <li class="translate-y-3">
+      <div
+        class="aspect-2/3 w-32 rotate-z-12 border border-black bg-amber-100 shadow-2xl drop-shadow-sm transition-transform"
+      ></div>
+    </li>
+    <li class="translate-y-12">
+      <div
+        class="aspect-2/3 w-32 rotate-z-24 border border-black bg-amber-100 shadow-2xl drop-shadow-sm transition-transform"
+      ></div>
+    </li>
+  </ul>
+</div>
+```
