@@ -333,3 +333,73 @@ A card hand that pulls out a card on hover.
   </ul>
 </div>
 ```
+
+## Table with resizeable columns
+
+https://play.tailwindcss.com/Qn8ce52faW
+
+A card with sticky footer + header and resizable columns
+
+```html
+<div class="flex size-full p-4">
+  <div class="flex grow flex-col overflow-y-auto">
+    <table class="border-collapse">
+      <thead>
+        <tr class="sticky top-0 bg-gray-100">
+          <th class="border px-2 text-left">
+            <div class="h-10 resize-x overflow-x-auto whitespace-nowrap">Header 1</div>
+          </th>
+          <th class="border px-2 text-left">
+            <div class="h-10 resize-x overflow-x-auto whitespace-nowrap">Header 2</div>
+          </th>
+          <!-- Last column needs to take up all space and not resize -->
+          <th class="w-full border px-2 text-left">
+            <div class="h-10 whitespace-nowrap">Header 3</div>
+          </th>
+        </tr>
+      </thead>
+      <!-- Table body -->
+      <tbody>
+        <tr>
+          <td class="border p-2">Data 1</td>
+          <td class="border p-2">Data 2</td>
+          <td class="border p-2">Data 3</td>
+        </tr>
+        <tr>
+          <td class="border p-2">Data 4</td>
+          <td class="border p-2">Data 5</td>
+          <td class="border p-2">Data 6</td>
+        </tr>
+        <tr>
+          <td class="border p-2">Data 7</td>
+          <td class="border p-2">Data 8</td>
+          <td class="border p-2">Data 9</td>
+        </tr>
+        <tr>
+          <td class="border p-2">Data 10</td>
+          <td class="border p-2">Data 11</td>
+          <td class="border p-2">Data 12</td>
+        </tr>
+        <tr>
+          <td class="border p-2">Data 13</td>
+          <td class="border p-2">Data 14</td>
+          <td class="border p-2">Data 15</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr class="sticky bottom-0 border bg-gray-100">
+          <td colspan="4" class="p-2">
+            <div class="flex justify-end">
+              <select class="border p-1">
+                <option>Page 1</option>
+                <option>Page 2</option>
+                <option>Page 3</option>
+              </select>
+            </div>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</div>
+```
